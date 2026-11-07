@@ -1,5 +1,9 @@
 # FCTT - validation et point de reprise
 
+## Sortie de build Vercel - 7 novembre 2026
+
+Vercel attend le dossier Next standard `.next`. FCTT conserve son cache local isole `.next-fctt`, mais utilise `.next` lorsque `VERCEL=1` pour que la plateforme trouve la sortie du build.
+
 ## Premier point de contr?le : liste et fiche Joueur
 
 ?tat du 7 novembre 2026 : lecteur FCTT, liste et fiche param?tr?s ; tests simul?s r?ussis. L'utilisateur a demand? de renseigner les variables plus tard et de pr?parer .env.example. `.env.local` reste absent et n'a pas ?t? cr?? ou modifi?. La connexion SDK de l'application n'est donc pas valid?e et aucun test Google d?pendant de ces variables n'est ex?cut?.
