@@ -1,0 +1,8 @@
+export type UserProfileViewModel = { fullName: string; firstName?: string; middleName?: string; lastName?: string; email?: string; phone?: string; jobTitle?: string; roleLabel?: string; accessLevel?: string; entityTypeLabel?: string; entityLabel?: string; status?: string; avatarUrl?: string }
+export type SeasonOptionViewModel = { id: string; label: string; startDate?: string; endDate?: string; statusId?: string; statusLabel?: string; disabled?: boolean }
+export type SystemSettingsViewModel = { currentSeasonId?: string; currentSeason?: SeasonOptionViewModel; availableSeasons: SeasonOptionViewModel[]; lastUpdatedAt?: string; lastUpdatedBy?: string; persistenceAvailable: boolean; seasonsAvailable: boolean }
+const clean = (value: unknown) => String(value ?? "").trim()
+export function profileInitials(profile: UserProfileViewModel) { const source = clean(profile.fullName) || [profile.firstName, profile.lastName].filter(Boolean).join(" "); const words = source.split(/\s+/).filter(Boolean); return (words.length > 1 ? `${words[0][0]}${words.at(-1)?.[0] ?? ""}` : words[0]?.slice(0, 2) || "UT").toUpperCase() }
+export function profileLabel(value: unknown, fallback: string) { return clean(value) || fallback }
+export function canSelectSeason(season: SeasonOptionViewModel) { const status = clean(season.statusLabel).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase(); return !season.disabled && status !== "ANNULEE" && status !== "ANNULE" }
+export function canRequestSeasonChange(settings: SystemSettingsViewModel, selectedId: string) { const selected = settings.availableSeasons.find((season) => season.id === selectedId); return Boolean(settings.persistenceAvailable && selected && selected.id !== settings.currentSeasonId && canSelectSeason(selected)) }

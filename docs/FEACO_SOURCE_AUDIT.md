@@ -1,0 +1,9 @@
+# Audit source et harmonisation
+
+Documents consultés : AGENTS.md FEVOCO, lots interfaces Ligues/V7/V8/V9, audit compétitions, code des pages, navigation, layouts, références, mappers et mutations. AGENTS.md source décrit une mission précédente FEBACO → FEVOCO; ses règles propres au dépôt source ne redéfinissent pas la référence FEACO. La demande actuelle impose FEVOCO comme référence visuelle exclusive et une démonstration locale dans une cible neuve.
+
+État Git relevé avant copie : modifications app/licences/page.tsx, components/licences/athlete-licences-client.tsx, lib/compact-date.test.mjs, lib/compact-date.ts, lib/licences-domain.test.ts, lib/licences-domain.ts, lib/mappers/actor-records.ts; nouvelles routes app/api/licences, formulaire athlete-licence-form.tsx, domaines affiliation et création de licences et test-results. État inchangé à la relecture après copie. Aucun autre dépôt modifié.
+
+Inventaire source : 21 fichiers page.tsx, API de lecture/mutation, composants UI partagés, six acteurs avec formulaires spécifiques, fiches territoriales et actions, licences saisonnières/entourage, module compétition à neuf sous-vues, équipes nationales et suivi, activités et documents avec relations, paramètres et tableau de bord. Données source : Google Sheets par en-têtes; fichiers via Drive serveur; polices locales; pas de login ni manifest/service-worker. Les mutations sont conservées à titre de parcours mais FEACO les intercepte avant exécution.
+
+Différences certaines : athlètes rattachés au club, aucun poste volleyball/FIVB, aucune paire beach, sets ou rencontre à deux adversaires dans les vues FEACO actives. Les catégories, disciplines, grades et spécialités officiels restent non connectés. Les mécanismes conservés dans les anciens fichiers inactifs ne valent pas règles athlétisme.

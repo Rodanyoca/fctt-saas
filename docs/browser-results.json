@@ -1,0 +1,159 @@
+{
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "formOpenedAndClosed": false,
+      "overflow": false
+    },
+    {
+      "route": "/ligues",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/ententes",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/clubs",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/athletes",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/coachs",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/arbitres",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/medecins",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/officiels",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/autres-acteurs",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/licences",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/licences/entourage",
+      "status": 200,
+      "formOpenedAndClosed": false,
+      "overflow": false
+    },
+    {
+      "route": "/competitions",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/competitions/DEMO-COMP-1",
+      "status": 200,
+      "formOpenedAndClosed": false,
+      "overflow": false
+    },
+    {
+      "route": "/equipe-nationale",
+      "status": 200,
+      "formOpenedAndClosed": false,
+      "overflow": false
+    },
+    {
+      "route": "/activites",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/activites/DEMO-ACT-1",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/documents",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "route": "/parametres",
+      "status": 200,
+      "formOpenedAndClosed": false,
+      "overflow": false
+    },
+    {
+      "route": "/suivi-equipe-nationale",
+      "status": 200,
+      "formOpenedAndClosed": false,
+      "overflow": false
+    },
+    {
+      "route": "/transferts",
+      "status": 200,
+      "formOpenedAndClosed": true,
+      "overflow": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/athletes",
+      "status": 409
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/clubs/DEMO-C1",
+      "status": 409
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/documents/DEMO-DOC-1",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "path": "/api/competitions/DEMO-COMP-1/results",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "path": "/api/licences/athletes",
+      "status": 409
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "mobileNavigation": true,
+  "keyboardFocus": true
+}

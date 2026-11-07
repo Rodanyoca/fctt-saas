@@ -1,0 +1,137 @@
+{
+  "headers": [
+    "id_athlete",
+    "id_ittf",
+    "nom_complet",
+    "id_sexe",
+    "date_naissance",
+    "lieu_naissance",
+    "nationalite",
+    "telephone",
+    "email",
+    "adresse",
+    "numero_passeport",
+    "date_delivrance_passeport",
+    "date_expiration_passeport",
+    "date_affiliation",
+    "statut",
+    "avatar_drive_id",
+    "avatar_drive_url",
+    "passeport_drive_id",
+    "passeport_drive_url"
+  ],
+  "references": {
+    "SEXES": [
+      [
+        "id_sexe",
+        "nom_sexe",
+        "observations"
+      ],
+      [
+        "SEX001",
+        "MASCULIN"
+      ],
+      [
+        "SEX002",
+        "FEMININ"
+      ],
+      [
+        "SEX099",
+        "AUTRE",
+        "Precision obligatoire"
+      ]
+    ],
+    "STATUTS_ACTEURS": [
+      [
+        "id_statut_acteur",
+        "nom_statut_acteur",
+        "observations"
+      ],
+      [
+        "ACTIF",
+        "ACTIF"
+      ],
+      [
+        "INACTIF",
+        "INACTIF",
+        "Conservation de l'identifiant permanent."
+      ],
+      [
+        "SUSPENDU",
+        "SUSPENDU",
+        "Suspension distincte de la duree de validite de l'identifiant."
+      ],
+      [
+        "DECEDE",
+        "DECEDE",
+        "Conservation historique de l'identifiant."
+      ],
+      [
+        "AUTRE",
+        "AUTRE",
+        "Precision obligatoire."
+      ]
+    ],
+    "FORMATS_ID": [
+      [
+        "objet",
+        "format_propose",
+        "exemple",
+        "description"
+      ],
+      [
+        "ATHLETE",
+        "TTB-ATH-######",
+        "TTB-ATH-000001",
+        "Identifiant fédéral permanent de fiche, distinct de toute licence non confirmée."
+      ],
+      [
+        "COACH",
+        "TTB-COA-######",
+        "TTB-COA-000001",
+        "Identifiant fédéral permanent de fiche, distinct de toute licence non confirmée."
+      ],
+      [
+        "ARBITRE",
+        "TTB-ARB-######",
+        "TTB-ARB-000001",
+        "Identifiant permanent."
+      ],
+      [
+        "OFFICIEL",
+        "TTB-OFF-######",
+        "TTB-OFF-000001",
+        "Identifiant permanent."
+      ],
+      [
+        "MEDECIN",
+        "TTB-MED-######",
+        "TTB-MED-000001",
+        "Identifiant permanent."
+      ],
+      [
+        "AUTRE_ACTEUR",
+        "TTB-AUT-######",
+        "TTB-AUT-000001",
+        "Identifiant permanent."
+      ],
+      [
+        "COMPETITION",
+        "TTB-COMP-AAAA-###",
+        "TTB-COMP-2026-001",
+        "Edition d'une competition."
+      ],
+      [
+        "AUTRES_OBJETS",
+        "PREFIXE + identifiant unique",
+        "",
+        "References stables, independantes des numeros de ligne ; allocation securisee par l'application."
+      ]
+    ]
+  },
+  "source": {
+    "actors": "https://docs.google.com/spreadsheets/d/16ygu-GXAzlzOa7O-F40ghq8NEQEAVqqG8hd9oSzIPuU/edit",
+    "references": "https://docs.google.com/spreadsheets/d/15YIULm6mASxqi7PPOA7HaxDr7N5fgpJ2FTu9zvnEhkU/edit",
+    "athleteCount": 0
+  }
+}

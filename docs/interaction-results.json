@@ -1,0 +1,56 @@
+{
+  "details": [
+    {
+      "route": "ligues",
+      "detail": true,
+      "edit": true
+    },
+    {
+      "route": "ententes",
+      "detail": true,
+      "edit": true
+    },
+    {
+      "route": "clubs",
+      "detail": true,
+      "edit": true
+    },
+    {
+      "route": "athletes",
+      "detail": true,
+      "edit": true
+    },
+    {
+      "route": "coachs",
+      "detail": true,
+      "edit": true
+    },
+    {
+      "route": "arbitres",
+      "detail": true,
+      "edit": true
+    },
+    {
+      "route": "medecins",
+      "detail": true,
+      "edit": true
+    },
+    {
+      "route": "officiels",
+      "detail": true,
+      "edit": true
+    },
+    {
+      "route": "autres-acteurs",
+      "detail": true,
+      "edit": true
+    }
+  ],
+  "calendarValidation": true,
+  "automaticSeparators": true,
+  "emptyDate": true,
+  "saveRefusedWithoutSuccess": true,
+  "filterEmptyAndReset": true,
+  "nationalDetail": true,
+  "affiliationHistory": true
+}
